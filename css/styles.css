@@ -108,6 +108,32 @@ header{
     margin-right: 50px;
 }
 
+.header-list:nth-child(1) .header-contact-link::before {
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../image/envelope.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 10px;
+    vertical-align: center;
+}
+
+.header-list:nth-child(2) .header-contact-link::before {
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../image/smartphone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 10px;
+    vertical-align: center;
+}
+
 .contacts {
     margin-left: auto;
 }
@@ -129,8 +155,10 @@ header{
     color: var(--color-7575);
     font-weight: 500;
     padding: 32px 0;
-    display: block;
+    display: inline-block;
+    vertical-align: center;
 }
+
 
 .header-link:hover,
 .header-contact-link:hover{
@@ -142,6 +170,7 @@ header{
     color: var(--color-blue);
 }
 
+
 /* start hero styles */
 
 .section{
@@ -149,7 +178,15 @@ header{
 }
 
 .hero{
-    background-color: #2F303A;
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bgImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color-darkfooter);
     padding: 200px 0;
 }
 
