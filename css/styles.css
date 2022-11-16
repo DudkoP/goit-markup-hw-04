@@ -223,6 +223,19 @@ header{
 .adv-block{
 }
 
+.adv-bg{
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--color-f5f4);
+    padding-left: 100px;
+    padding-top: 25px;
+}
+
+.icon {
+    
+}
+
 .adv-list{
     width: 270px;    
     list-style: none;
@@ -302,6 +315,41 @@ header{
     padding: 30px 0;
 }
 
+.icons-social{
+    display: flex;
+}
+
+.lists.icons-social{
+    width: 100%;
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.social-link{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    padding: 12px;
+}
+
+.social-link:hover{
+    background-color: var(--color-button-active);
+    border-radius: 50%;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-logo{
+    fill: #afb1b8;
+}
+
+.social-logo:hover{
+    fill: var(--color-white);
+}
+
 .details .team-block-title{
     margin-bottom: 10px;
 }
@@ -319,6 +367,39 @@ header{
     line-height: 1.1875;
     letter-spacing: 0.03em;
     color:var(--color-7575);
+}
+
+/* works section styles */ 
+
+.works .topic {
+    margin-bottom: 50px;
+}
+
+.works-item{
+    width: 170px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.works-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.works-item:hover {
+    border: 1px solid var(--color-button-active);
+}
+
+.works-link{
+    display: inline-block;
+    padding: 16px 32px;
+}
+
+.company-logo{
+    fill: var(--color-f5f4);
+}
+
+.company-logo:hover{
+    fill: var(--color-button-active);
 }
 
 /* start footer styles */
