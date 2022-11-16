@@ -108,31 +108,25 @@ header{
     margin-right: 50px;
 }
 
-.header-list:nth-child(1) .header-contact-link::before {
-    display: inline-block;
-    content: '';
-    width: 20px;
-    height: 20px;
-    background-image: url(../image/envelope.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.header-contact-link.mail,
+.header-contact-link.tel {
+    display: inline-flex;
+}   
+
+.icon-phone, .icon-envelope {
+    width: 16px;
+    height: 16px;
     margin-right: 10px;
-    vertical-align: center;
+    fill: var(--color-7575);
 }
 
-.header-list:nth-child(2) .header-contact-link::before {
-    display: inline-block;
-    content: '';
-    width: 20px;
-    height: 20px;
-    background-image: url(../image/smartphone.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    margin-right: 10px;
-    vertical-align: center;
+.icon-phone:hover, .icon-envelope:hover{
+    fill: var(--color-button-active);
 }
+
+/* end of test block */ 
+
+
 
 .contacts {
     margin-left: auto;
