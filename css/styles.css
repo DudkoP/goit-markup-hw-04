@@ -153,16 +153,24 @@ header{
     vertical-align: center;
 }
 
-
-.header-link:hover,
-.header-contact-link:hover{
+.header-contact-link:hover {
     color: var(--color-blue);
 }
 
-.header-link:focus,
+.header-contact-link:hover .icon-envelope, 
+.header-contact-link:hover .icon-phone{
+    fill: var(--color-button-active);
+}
+
 .header-contact-link:focus {
     color: var(--color-blue);
 }
+
+.header-contact-link:focus .icon-envelope,
+.header-contact-link:focus .icon-phone{
+    fill: var(--color-button-active);
+}
+
 
 
 /* start hero styles */
@@ -338,16 +346,16 @@ header{
     border-radius: 50%;
 }
 
+.social-link:hover .social-logo{
+    fill: var(--color-white);
+}
+
 .social-item:not(:last-child) {
     margin-right: 10px;
 }
 
 .social-logo{
     fill: #afb1b8;
-}
-
-.social-logo:hover{
-    fill: var(--color-white);
 }
 
 .details .team-block-title{
@@ -377,25 +385,33 @@ header{
 
 .works-item{
     width: 170px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
 }
 
 .works-item:not(:last-child){
     margin-right: 30px;
 }
 
-.works-item:hover {
+.works-link:hover, .works-link:focus {
     border: 1px solid var(--color-button-active);
+}
+
+.works-link:hover .company-logo {
+    fill: var(--color-button-active);
+}
+
+.works-link:focus .company-logo {
+    fill: var(--color-button-active);
 }
 
 .works-link{
     display: inline-block;
     padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
 
 .company-logo{
-    fill: var(--color-f5f4);
+    fill: #AFB1B8;
 }
 
 .company-logo:hover{
@@ -408,9 +424,16 @@ footer{
     padding: 60px 0;
     background-color: var(--color-darkfooter);
 }
+.footer.flexbox{
+    margin-left: auto;
+}
+
+.footer-all{
+    align-items: baseline;
+}
 
 .footer-block{
-
+    margin-right: 70px;
 }
 
 .footer-logo-link{
@@ -454,6 +477,36 @@ address {
     letter-spacing: 0.03em;
 }
 
+.join{
+
+}
+
+.join-us{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.join-us-list{
+    list-style: none;
+}
+
+.join-us-list .social-link{
+    background-color:rgba(255, 255, 255, 0.1); 
+    border-radius: 50%;
+}
+
+.join-us-list .social-link:hover{
+    background-color: var(--color-blue);
+}
+
+.join-us-logo{
+    fill: var(--color-white);
+}
 
 /* portfolio styles page */
 
