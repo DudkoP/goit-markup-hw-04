@@ -551,16 +551,13 @@ address {
 
 /* start products styles */
 
-.product-block{
-    width: 1200px;
-    padding-bottom: 94px;
-}
-
 .product-lists{
+    width: 1200px;
     display: flex;
     list-style: none;
     flex-wrap: wrap;
 }
+
 .product-list-wrap{
 }
 
@@ -591,6 +588,15 @@ address {
     border: 1px solid #EEEEEE;
 }
 
+.product-link:hover,
+.product-link:focus {
+    display: inline-block;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .product-name{
     font-weight: 700;
     font-size: 18px;
@@ -607,3 +613,5 @@ address {
     color: var(--color-7575);
     text-decoration: none;
 }
+
+
