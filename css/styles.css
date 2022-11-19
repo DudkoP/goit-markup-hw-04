@@ -289,7 +289,7 @@ header{
 .topic{
     font-weight: 700;
     font-size: 36px;
-    line-height: 2.625;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--color-2121);
 }
@@ -532,6 +532,7 @@ address {
 
 .folio-button{
     font-family: inherit;
+    cursor: pointer;
     padding: 6px 22px;
     background: var(--color-f5f4);
     border-radius: 4px;
@@ -544,7 +545,6 @@ address {
 
 .folio-button:hover,
 .folio-button:focus{
-    cursor: pointer;
     background: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
                 0px 1px 2px rgba(0, 0, 0, 0.08), 
